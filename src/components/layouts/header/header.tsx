@@ -3,8 +3,8 @@
 import Container from '@/components/general/container/container'
 import styles from './header.module.scss'
 import Logo from '@/components/general/logo/logo'
-import CurrentLocation from '@/components/blocks/header/currentLocation/currentLocation'
-import ContactLinks from '@/components/blocks/header/contactLinks/contactLinks'
+import Button from '@/components/ui/button/button'
+import { EFieldSizes } from '@/types/fields'
 
 const Header = () => {
     return (
@@ -14,12 +14,11 @@ const Header = () => {
                     <div className={styles.logo}>
                         <Logo />
                     </div>
-                    <div className={styles.location}>
-                        <CurrentLocation />
-                    </div>
-                    <div className={styles.contacts}>
-                        <ContactLinks />
-                    </div>
+                    <Button
+                        text='Contact Me'
+                        size={EFieldSizes.SMALL}
+                        square
+                    />
                 </div>
             </Container>
         </header>

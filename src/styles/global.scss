@@ -21,23 +21,10 @@ a {
 
 input,
 textarea,
-select {
-    appearance: none;
-    outline: none;
-
-    &:focus {
-        box-shadow: 0 0 0 6px var(--theme-focus), 0 0 0 2px var(--theme);
-    }
-
-}
-
+select,
 button {
     appearance: none;
     outline: none;
-
-    &:focus {
-        box-shadow: 0 0 0 4px var(--theme-focus);
-    }
 }
 
 body,
@@ -71,7 +58,7 @@ h5,
 h6,
 .h6 {
     line-height: var(--lh-title);
-    font-weight: 600;
+    font-weight: 700;
 }
 
 h1,

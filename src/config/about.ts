@@ -1,1 +1,1 @@
-export const ConfAboutMe = `My name is Zhan, I'm a 22 year old full stack developer from Kazakhstan. I have been working in web development for 4+ years. I also create designs for my projects on my own and set up the server and domain several times when publishing the project. I devote my free time to studying Unreal Engine and Blender.`
+export const ConfAboutMe = `My name is Zhan, I am a full stack developer from Kazakhstan. I have been developing websites for more than 4 years and am eager to develop further in this direction.`

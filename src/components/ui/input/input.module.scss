@@ -1,0 +1,199 @@
+.input {
+    position: relative;
+    font-size: var(--fz);
+    --padding: 3px;
+    --size: calc(var(--field) - (var(--padding) * 2));
+    --fz: var(--fz-regular);
+
+    .icon {
+        position: absolute;
+        pointer-events: none;
+        top: 0;
+        bottom: 0;
+        padding: 0 1em;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        color: var(--input-icon);
+        font-size: 1.2em;
+
+        &:first-child {
+            left: 0;
+        }
+
+        &:last-child {
+            right: 0;
+        }
+
+    }
+
+    .button {
+        position: absolute;
+        top: var(--padding);
+        height: var(--size);
+        width: var(--size);
+        border-radius: calc(var(--rad) - var(--padding));
+        background: var(--button-bg);
+        color: var(--theme);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        cursor: pointer;
+        user-select: none;
+
+        &:first-child {
+            left: var(--padding);
+        }
+
+        &:last-child {
+            right: var(--padding);
+        }
+
+    }
+
+    select {
+        cursor: pointer;
+    }
+
+    input,
+    select {
+        border: 1px solid var(--input-border);
+        transition: 0.1s;
+        width: 100%;
+        height: var(--field);
+        padding: 0 1.5em;
+        border-radius: var(--rad);
+        background-color: var(--input-bg);
+        color: var(--input-color);
+        appearance: none;
+        font-size: var(--fz);
+
+        &:not(:first-child) {
+            padding-left: calc(1em + 1.2em + 0.8em);
+        }
+
+        &:not(:last-child) {
+            padding-right: calc(1em + 1.2em + 0.8em);
+        }
+
+        &:hover {
+            background-color: var(--input-bg-hover);
+        }
+
+        &::placeholder {
+            color: var(--input-placeholder);
+        }
+
+        option {
+            background: var(--bg-regular);
+        }
+    }
+
+    &.smallPadding {
+
+        input,
+        select {
+            padding: 0 1em;
+        }
+
+    }
+
+    &.primary {
+        --input-color: var(--text-regular-color);
+        --input-bg: var(--bg-regular);
+        --input-icon: var(--text-regular-color);
+        --input-placeholder: var(--text-greylight-color);
+        --input-border: var(--border-regular);
+        --button-bg: var(--bg-grey);
+
+        &:hover {
+            --input-bg-hover: var(--bg-grey);
+        }
+
+    }
+
+    &.bg {
+        --input-color: var(--text-regular-color);
+        --input-bg: var(--bg-regular);
+        --input-icon: var(--text-regular-color);
+        --input-placeholder: var(--text-greylight-color);
+        --input-border: transparent;
+        --button-bg: var(--bg-grey);
+
+        &:hover {
+            --input-bg-hover: var(--bg-grey);
+        }
+
+    }
+
+    &.grey {
+        --input-color: var(--text-regular-color);
+        --input-bg: var(--bg-grey);
+        --input-icon: var(--text-regular-color);
+        --input-placeholder: var(--text-greylight-color);
+        --input-border: transparent;
+        --button-bg: var(--switcher-active-bg);
+
+        &:hover {
+            --input-bg-hover: var(--bg-grey-dark);
+        }
+
+    }
+
+    &.error {
+
+        input,
+        select {
+            box-shadow: 0 0 0 6px var(--red-focus), 0 0 0 2px var(--red);
+        }
+
+    }
+
+    &.mono {
+
+        input,
+        select {
+            font-family: var(--font-mono);
+        }
+
+    }
+
+    &.center {
+
+        input,
+        select {
+            text-align: center;
+        }
+
+    }
+
+    &.quantity {
+
+        input {
+            text-align: center;
+            padding: 0;
+        }
+
+    }
+
+    &.small {
+        --fz: var(--fz-small);
+        --field: var(--field-small);
+    }
+
+    &.smaller {
+        --fz: var(--fz-smaller);
+        --field: var(--field-smaller);
+    }
+
+    &.larger {
+        --fz: var(--fz-larger);
+        --field: var(--field-larger);
+    }
+
+    &.large {
+        --fz: var(--fz-large);
+        --field: var(--field-large);
+    }
+
+}

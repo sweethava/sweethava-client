@@ -1,5 +1,5 @@
 import localFont from 'next/font/local'
-import { Cousine } from 'next/font/google'
+import { Cousine, Inter } from 'next/font/google'
 
 export const CousineFont = Cousine({
     weight: ['400'],
@@ -9,7 +9,10 @@ export const CousineFont = Cousine({
     variable: '--font-mono',
 })
 
-export const MonaSansFont = localFont({
+export const InterFont = Inter({
+    weight: ['400', '500', '600', '700'],
+    style: ['normal'],
+    subsets: ['latin'],
+    display: 'swap',
     variable: '--font',
-    src: '../fonts/MonaSans[slnt,wdth,wght].woff2',
 })
