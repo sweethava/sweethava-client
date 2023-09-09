@@ -1,0 +1,16 @@
+.subtitle {
+    display: flex;
+    color: var(--theme);
+    align-items: center;
+
+    .icon {
+        display: flex;
+        margin-right: 0.5rem;
+    }
+
+    .text {
+        font-weight: 600;
+        text-transform: uppercase;
+    }
+
+}

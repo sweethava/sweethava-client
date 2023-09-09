@@ -1,0 +1,24 @@
+.scrollDown {
+    border: 2px solid var(--border-regular);
+    width: fit-content;
+    border-radius: 4rem;
+    display: flex;
+    align-items: center;
+    line-height: 1;
+    height: var(--field);
+    padding: 0 2rem;
+    cursor: pointer;
+    transition: 0.2s;
+
+    .icon {
+        display: flex;
+        margin-right: 0.6rem;
+        color: var(--text-grey-color);
+        font-size: 1.2em;
+    }
+
+    &:hover {
+        border-color: var(--theme);
+    }
+
+}

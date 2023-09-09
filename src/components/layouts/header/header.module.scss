@@ -1,0 +1,19 @@
+.header {
+    position: relative;
+
+    .inner {
+        display: flex;
+        height: var(--header);
+        align-items: center;
+
+        .logo {
+            width: 50%;
+        }
+
+    }
+
+    .location {
+        margin-right: auto;
+    }
+
+}

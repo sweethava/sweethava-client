@@ -1,0 +1,35 @@
+.section {
+
+    .inner {
+        min-height: calc(100vh - var(--header));
+        padding: 6rem 0;
+        display: flex;
+        flex-direction: column;
+
+        .content {
+            max-width: 70rem;
+            margin: auto 0;
+
+            .subtitle {
+                margin-bottom: 0.6rem;
+            }
+
+            .title {
+                text-transform: uppercase;
+                font-size: 9rem;
+                font-weight: 900;
+                font-stretch: 125%;
+                line-height: 1;
+                margin-bottom: 2rem;
+            }
+
+            .text {
+                font-size: var(--fz-large);
+                color: var(--text-grey-color);
+            }
+
+        }
+
+    }
+
+}

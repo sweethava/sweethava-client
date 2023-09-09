@@ -1,0 +1,15 @@
+.location {
+    line-height: 1;
+
+    .title {
+        margin-bottom: 1rem;
+        text-transform: uppercase;
+        color: var(--text-grey-color);
+        font-size: var(--fz-small);
+    }
+
+    .text {
+        font-size: var(--fz-larger);
+    }
+
+}
