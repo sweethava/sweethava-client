@@ -5,6 +5,14 @@
     align-items: center;
     position: relative;
 
+    .scene {
+        position: fixed;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        left: 0;
+    }
+
     .inner {
         position: relative;
         pointer-events: none;
@@ -19,15 +27,7 @@
                 pointer-events: all;
             }
 
-            .title {
-                font-size: 4.5rem;
-                margin-bottom: 1.5rem;
-            }
-
-            .text {
-                max-width: 70rem;
-                color: var(--text-grey-color);
-                font-size: var(--fz-large);
+            .article {
                 margin-bottom: 2.5rem;
             }
 

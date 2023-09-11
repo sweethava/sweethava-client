@@ -10,16 +10,16 @@ const FirstSlideScene = () => {
     return (
         <div className={styles.scene}>
             <Canvas shadows>
-                <fog attach="fog" args={['#111', 5, 20]} />
-                <color args={['#111']} attach={"background"} />
+                <fog attach="fog" args={['#0a0a0a', 5, 20]} />
+                <color args={['#0a0a0a']} attach={"background"} />
                 <DefaultEffects />
                 <Float>
                     <PainterStuff />
                 </Float>
                 <Sparkles scale={10} count={200} opacity={0.2} />
-                <directionalLight castShadow position={[2, 2, 2]} />
+                <directionalLight castShadow position={[2, 2, 2]} intensity={1.5} />
+                <ambientLight color={'#0a0a0a'} />
                 <SoftShadows />
-                {/* <BakeShadows /> */}
             </Canvas>
         </div>
     )

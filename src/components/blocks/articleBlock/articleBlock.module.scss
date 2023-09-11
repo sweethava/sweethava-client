@@ -1,0 +1,28 @@
+.article {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    &>* {
+        pointer-events: all;
+    }
+
+    .title {
+        font-size: 4.5rem;
+        font-weight: 700;
+        line-height: var(--lh-title);
+
+        &:not(:last-child) {
+            margin-bottom: 1rem;
+        }
+
+    }
+
+    .text {
+        max-width: 70rem;
+        color: var(--text-grey-color);
+        font-size: var(--fz-large);
+    }
+
+}
