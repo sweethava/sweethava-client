@@ -1,0 +1,22 @@
+.announcement {
+    position: fixed;
+    bottom: 3rem;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 10;
+    background: var(--theme);
+    color: #fff;
+    padding: 0.6rem 1rem;
+    border-radius: 3rem;
+    font-size: var(--fz-smaller);
+    display: flex;
+    align-items: center;
+    line-height: var(--lh-title);
+
+    .icon {
+        display: flex;
+        font-size: 1.3em;
+        margin-right: 0.6rem;
+    }
+
+}

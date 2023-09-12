@@ -10,7 +10,7 @@
         border-radius: var(--rad-large);
         padding: 2rem 2rem 1.5rem 2rem;
         backdrop-filter: blur(var(--blur));
-        border: 1px solid var(--border-regular);
+        border: 2px solid var(--border-regular);
         position: relative;
         z-index: 2;
         color: var(--text-regular-color);
@@ -40,6 +40,7 @@
                 justify-content: center;
                 font-size: 3.5rem;
                 box-shadow: 0 0 0 1rem var(--bg-grey);
+                transition: 0.4s;
             }
 
         }
@@ -55,8 +56,21 @@
                 transform: scale(1.1);
             }
 
+            .linkIcon {
+                box-shadow: 0 0 0 2rem var(--bg-grey);
+                transform: scale(0.95);
+            }
+
         }
 
+    }
+
+}
+
+@media (max-width: 768px) {
+
+    .grid {
+        --grid: 2;
     }
 
 }

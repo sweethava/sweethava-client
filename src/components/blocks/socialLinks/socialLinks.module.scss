@@ -1,0 +1,17 @@
+.social {
+    display: flex;
+    width: 100%;
+
+    .links {
+        width: calc(100% + 1rem);
+        margin: -0.5rem;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+
+        .link {
+            margin: 0.5rem;
+        }
+
+    }
+}

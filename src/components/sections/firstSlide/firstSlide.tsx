@@ -7,6 +7,7 @@ import { ConfAboutMe } from '@/config/about'
 import ContactLinks from '@/components/blocks/contactLinks/contactLinks'
 import FirstSlideScene from '@/three/scenes/firstSlideScene/firstSlideScene'
 import ArticleBlock from '@/components/blocks/articleBlock/articleBlock'
+import AnimationRow from '@/components/animations/animationRow/animationRow'
 
 const FirstSlide = () => {
     return (
@@ -25,7 +26,9 @@ const FirstSlide = () => {
                             />
                         </div>
                         <div className={styles.links}>
-                            <ContactLinks />
+                            <AnimationRow>
+                                <ContactLinks />
+                            </AnimationRow>
                         </div>
                     </div>
                 </div>

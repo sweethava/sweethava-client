@@ -1,0 +1,51 @@
+.tag {
+    background: var(--bg);
+    border: 2px solid var(--border);
+    color: var(--color);
+    font-size: var(--fz);
+    line-height: 1;
+    padding: 0.3em 0.5em;
+    border-radius: 3rem;
+    font-weight: 600;
+
+    &.primary {
+        --bg: var(--bg-regular-op);
+        --color: var(--text-regular-op-color);
+        --border: transparent;
+    }
+
+    &.grey {
+        --bg: var(--bg-grey);
+        --color: var(--text-regular-color);
+        --border: transparent;
+        backdrop-filter: blur(var(--blur));
+    }
+
+    &.outline {
+        --bg: var(--bg-grey);
+        --color: var(--text-regular-color);
+        --border: var(--border-regular);
+        backdrop-filter: blur(var(--blur));
+    }
+
+    &.default {
+        --fz: var(--fz-primary);
+    }
+
+    &.small {
+        --fz: var(--fz-small);
+    }
+
+    &.smaller {
+        --fz: var(--fz-smaller);
+    }
+
+    &.large {
+        --fz: var(--fz-large);
+    }
+
+    &.larger {
+        --fz: var(--fz-larger);
+    }
+
+}

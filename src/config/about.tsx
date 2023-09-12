@@ -5,6 +5,7 @@ import psqlImage from '/public/logos/psql.png'
 import nestImage from '/public/logos/nest.png'
 import nextImage from '/public/logos/nextjs.png'
 import prismaImage from '/public/logos/prisma.png'
+import { ConfCVLink } from './general'
 
 export const ConfAboutMe = `My name is Zhan, I am a full stack developer from Kazakhstan. I have been developing websites for more than 4 years and am eager to develop further in this direction.`
 export const ConfMySkillsAbout = `Over several years of work, I have used a lot of technology. Here are some of them.`
@@ -39,6 +40,6 @@ export const ConfMySkills = [
     },
     {
         title: 'Other',
-        link: 'https://docs.google.com/document/d/1rL6GRxpJRXfQF8TH3MiJOOEEO8bjZVQSe_pWS-IGsno/edit?usp=sharing'
+        link: ConfCVLink
     },
 ]

@@ -7,7 +7,7 @@
     line-height: 1;
     border: none;
     transition: 0.2s;
-    border: 1px solid var(--border);
+    border: 2px solid var(--border);
     border-radius: var(--rad);
     background: var(--bg);
     border-radius: 3rem;
@@ -105,14 +105,10 @@
 
     &.outline {
         --border: var(--border-regular);
-        --bg: transparent;
+        --bg: linear-gradient(45deg, var(--bg-grey), var(--bg-grey-dark));
         --icon-color: var(--text-grey-color);
         --color: var(--text-regular-color);
-
-        &:hover {
-            --bg: var(--bg-grey);
-        }
-
+        backdrop-filter: blur(var(--blur));
     }
 
     &:disabled {

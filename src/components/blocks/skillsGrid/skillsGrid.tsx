@@ -6,6 +6,7 @@ import { ConfMySkills } from '@/config/about'
 import Image from 'next/image'
 import { HiOutlineExternalLink } from 'react-icons/hi'
 import Link from 'next/link'
+import AnimationScale from '@/components/animations/animationScale/animationScale'
 
 const SkillsGrid = () => {
     const [skills] = useState(ConfMySkills)
@@ -18,23 +19,27 @@ const SkillsGrid = () => {
 
                     if (link) {
                         return (
-                            <Link href={link} target='_blank' className={styles.item} key={index}>
-                                <div className={styles.icon}>
-                                    <div className={styles.linkIcon}>
-                                        <HiOutlineExternalLink />
+                            <AnimationScale key={index}>
+                                <Link href={link} target='_blank' className={styles.item}>
+                                    <div className={styles.icon}>
+                                        <div className={styles.linkIcon}>
+                                            <HiOutlineExternalLink />
+                                        </div>
                                     </div>
-                                </div>
-                                <div className={styles.title}>{title}</div>
-                            </Link>
+                                    <div className={styles.title}>{title}</div>
+                                </Link>
+                            </AnimationScale>
                         )
                     } else {
                         return (
-                            <div className={styles.item} key={index}>
-                                <div className={styles.icon}>
-                                    {image ? <Image src={image.src} fill alt={title} /> : null}
+                            <AnimationScale key={index}>
+                                <div className={styles.item}>
+                                    <div className={styles.icon}>
+                                        {image ? <Image src={image.src} fill alt={title} /> : null}
+                                    </div>
+                                    <div className={styles.title}>{title}</div>
                                 </div>
-                                <div className={styles.title}>{title}</div>
-                            </div>
+                            </AnimationScale>
                         )
                     }
                 })
