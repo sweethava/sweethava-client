@@ -78,7 +78,7 @@ const LatestProjects = () => {
                                 <AnimationScale>
                                     <Link href={link} target='_blank' className={styles.item} key={index}>
                                         <div className={styles.image}>
-                                            <Image src={image.src} fill alt={title} />
+                                            <Image src={image.src} fill alt={title} loading='eager' />
                                         </div>
                                         <div className={styles.tags}>
                                             <div className={styles.line}>
