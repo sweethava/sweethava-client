@@ -7,6 +7,9 @@ import 'swiper/css'
 export const metadata: Metadata = {
 	title: 'Zhan Ilyas',
 	description: 'My personal site',
+	other: {
+		'mailru-domain': 'zsvILXEQ6z6eVxiu'
+	},
 	viewport: {
 		initialScale: 1,
 		userScalable: false
