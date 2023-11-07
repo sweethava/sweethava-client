@@ -1,4 +1,5 @@
 import veterImage from '/public/projects/veter2.jpg'
+import gatewayImage from '/public/projects/gateway1.jpg'
 import moneyImage from '/public/projects/money2.jpg'
 import flowerImage from '/public/projects/flower2.jpg'
 import radioImage from '/public/projects/radio.jpg'
@@ -10,6 +11,13 @@ export const ConfLatestProjects = [
         text: 'Watch and Accessories Store',
         image: veterImage,
         link: 'https://vetervremeni.kz'
+    },
+    {
+        tags: ['Front-end', 'Back-end', 'UI/UX'],
+        title: 'Gateway',
+        text: 'China Supply Company',
+        image: gatewayImage,
+        link: 'https://gatewaysrc.com'
     },
     {
         tags: ['Front-end', 'Back-end'],
